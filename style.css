@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(image/utama.jpg);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+.register a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    background: indianred;
+}
+
+.register a:hover {
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+.h-text {
+    position: relative;
+    max-width: 90%;
+}
+
+.h-text span {
+    letter-spacing: 5px;
+}
+
+.h-text h1 {
+    font-size: 4em;
+}
+
+.h-text a {
+    text-decoration: none;
+    background: indianred;
+    padding: 10px 20px;
+    color: #fff;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+
+.h-text a:hover {
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Specific Section Styles */
+#about {
+    background-color: #f4f4f4;
+}
+
+#destinations {
+    background-color: #fff;
+}
+
+.destination-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.destination-item {
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.destination-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#services {
+    background-color: #f4f4f4;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.service-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-text {
+    flex: 1;
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+.service-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-text p {
+    line-height: 1.5;
+}
+
+/* Google Maps Container */
+.map-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #a5a2a2;
+    color: #fff;
+}
+
+#contact p {
+    color: #ddd;
+}
+
+#contact a {
+    text-decoration: none;
+    color: indianred;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-list {
+    text-align: center;
+}
+
+.footer-list h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-list ul {
+    list-style-type: disc;
+    padding-left: 0;
+}
+
+.footer-list ul li {
+    margin-bottom: 10px;
+}
+
+.footer-list ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-list ul li a:hover {
+    color: indianred;
+}
+
+.footer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe52;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+}
+
+.btn-facebook:hover {
+    background-color: #2d4373;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu a, .register a {
+        font-size: 16px;
+    }
+
+    .h-text h1 {
+        font-size: 2.5em;
+    }
+
+    .destination-item {
+        width: 90%;
+        max-width: none;
+    }
+
+    .service-content {
+        flex-direction: column;
+    }
+
+    .service-image img {
+        max-width: 100%;
+    }
+
+    .service-text {
+        text-align: center;
+    }
+
+    .map-container {
+        max-width: 100%;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list {
+        text-align: center;
+    }
+}
